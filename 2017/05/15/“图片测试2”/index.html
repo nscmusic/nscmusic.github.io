@@ -84,6 +84,21 @@
 <p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4245887956,100740587&amp;fm=23&amp;gp=0.jpg" alt="在此输入正文"></p>
 <p><img src="http://img2.ph.126.net/3Krpd-Y6TYcQQBMJy7TxUw==/6632222252908708244.jpg" alt="此处输入图片的描述"></p>
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=16439086&auto=1&height=32"></iframe>
+
+<html><br><head><br><script type="text/javascript"><br>function startTime()<br>{<br>var today=new Date()<br>var h=today.getHours()<br>var m=today.getMinutes()<br>var s=today.getSeconds()<br>// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script><br></head><br><br><body onload="startTime()"><br><div id="txt"></div><br></body><br></html>
 	</div>
 	<div class="meta split">
 		
